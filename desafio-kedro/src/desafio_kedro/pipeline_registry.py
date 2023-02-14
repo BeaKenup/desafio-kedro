@@ -3,6 +3,7 @@ from typing import Dict
 
 from kedro.framework.project import find_pipelines
 from kedro.pipeline import Pipeline
+from desafio_kedro.pipelines import pre_processing as pp
 
 
 def register_pipelines() -> Dict[str, Pipeline]:
@@ -11,6 +12,9 @@ def register_pipelines() -> Dict[str, Pipeline]:
     Returns:
         A mapping from pipeline names to ``Pipeline`` objects.
     """
-    pipelines = find_pipelines()
-    pipelines["__default__"] = sum(pipelines.values())
-    return pipelines
+
+    pre_processing_pipeline = pp.create_pipeline()
+    
+    return {
+        "pp": pre_processing_pipeline,
+        "__default__": pre_processing_pipeline    }
