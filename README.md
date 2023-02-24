@@ -1,6 +1,22 @@
-# desafio-kedro
+# MLOps Challenge - Classification of titanic survivors 
 
 ## Overview
+
+The sinking of the Titanic is one of the most infamous shipwrecks in history.
+
+On April 15, 1912, during her maiden voyage, the widely considered “unsinkable” RMS Titanic sank after colliding with an iceberg. Unfortunately, there weren’t enough lifeboats for everyone onboard, resulting in the death of 1502 out of 2224 passengers and crew.
+
+While there was some element of luck involved in surviving, it seems some groups of people were more likely to survive than others.
+
+In this challenge, we ask you to build a predictive model that answers the question: “what sorts of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).
+
+## How to access the raw data
+
+The data is available on the kaggle website. There are 2 datasets available, train.csv with information about the passenger survival (objective variable) and the test.cv where these information is not available.
+
+To access the [data set](https://www.kaggle.com/competitions/titanic/data)
+
+## About Kedro
 
 This is your new Kedro project, which was generated using `Kedro 0.18.4`.
 
