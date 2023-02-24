@@ -7,10 +7,18 @@ test:
     type: pandas.CSVDataSet
     filepath: data/01_raw/test.csv
 
-gender_submission:
+train:
     type: pandas.CSVDataSet
-    filepath: data/01_raw/gender_submission.csv
+    filepath: data/01_raw/train.csv
 
-pp_titanic_dataset:
+preprocess_titanic_train:
     type: pandas.CSVDataSet
-    filepath: data/02_intermediate/pp_titanic.csv
+    filepath: data/02_intermediate/pp_titanic_train.csv
+
+preprocess_titanic_test:
+    type: pandas.CSVDataSet
+    filepath: data/02_intermediate/pp_titanic_test.csv
+
+feature_engineer:
+    type: pickle.PickleDataSet
+    filepath: data/04_feature/previsao_titanic.pkl
