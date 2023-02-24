@@ -16,6 +16,8 @@ The data is available on the kaggle website. There are 2 datasets available, tra
 
 To access the [data set](https://www.kaggle.com/competitions/titanic/data)
 
+After git clone, tables with data must be downloaded and inserted in the project folder ` data/01_raw `
+
 ## About Kedro
 
 This is your new Kedro project, which was generated using `Kedro 0.18.4`.
